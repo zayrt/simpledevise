@@ -9,11 +9,9 @@
 <body>
 <div class="header">
 <%= render 'layouts/user_header' %></div>
- <div class="container">
-      <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
+ <h1>SimpleDevise</h1>
+ <br/>
+ <%= render 'layouts/flash_partial' %>
 <%= yield %>
-</div>
 </body>
 </html>
